@@ -1,11 +1,28 @@
 {
   "name": "roomforhelp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "init": "^0.1.2",
+    "pg": "^8.2.1",
+    "sequelize": "^5.21.13",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomtom-dev/Room-app-server.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Tomtom-dev/Room-app-server/issues"
+  },
+  "homepage": "https://github.com/Tomtom-dev/Room-app-server#readme",
+  "description": ""
 }
