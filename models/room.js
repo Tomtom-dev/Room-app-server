@@ -7,7 +7,8 @@ module.exports = (sequelize, DataTypes) => {
     image: DataTypes.STRING
   }, {});
   room.associate = function(models) {
-    // associations can be defined here
+    room.belongsTo(models.user)
+    room.hasMany(models.room_respond)
   };
   return room;
 };

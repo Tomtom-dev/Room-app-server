@@ -5,7 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     answer: DataTypes.BOOLEAN
   }, {});
   room_respond.associate = function(models) {
-    // associations can be defined here
+    room_respond.belongsTo(models.room)
+    room_respond.belongsTo(models.user)
   };
   return room_respond;
 };
