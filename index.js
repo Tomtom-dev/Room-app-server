@@ -12,8 +12,11 @@ app.use(jsonParser)
 const roomPageRouter = require('./routers/room')
 app.use("/", roomPageRouter)
 
-const userRouter = require ("./routers/auth")
-app.use("/login", userRouter)
+const userAuthRouter = require ("./routers/users")
+app.use("/signup", userAuthRouter)
+
+const userLogin = require ("./routers/auth")
+app.use("/login", userLogin)
 
 app.listen(port, () => console.log(`listening on port ...${port}`)
 )
