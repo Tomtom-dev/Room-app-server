@@ -3,12 +3,9 @@ const bcrypt= require ('bcrypt')
 
 const User = require ("../models").user;
 
-
 const router = new Router();
 
-
 // get all users
-
 
 router.get("/", async (req,res,next)=>{
     try{
