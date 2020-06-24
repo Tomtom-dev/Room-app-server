@@ -25,9 +25,10 @@ router.post("/", async ( req, res, next)=>{
                 const token= toJWT({userId: user.id})
                 //guy exist have to log him in
                 console.log('right password');
-                
+
+                    delete user.dataValues["password"]; // don't send back the password hash
+                    return res.status(200).send({ token, ...user.dataValues });
                 //create JWT
-                res.send({token})
             }else{
                 res.status(400).send("Wrong Password")
             }
