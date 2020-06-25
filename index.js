@@ -19,5 +19,9 @@ app.use("/signup", userAuthRouter)
 const userLogin = require ("./routers/auth")
 app.use("/login", userLogin)
 
+const roomRespond = require("./routers/message")
+app.use("/roomrespond", roomRespond)
+
+
 app.listen(port, () => console.log(`listening on port ...${port}`)
 )
