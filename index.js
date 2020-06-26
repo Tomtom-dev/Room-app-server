@@ -3,9 +3,9 @@ const cors= require('cors')
 const jsonParser= express.json();
 const app= express();
 const port = process.env.PORT || 4000;
-const corsMiddleware =cors()
 
-app.use(corsMiddleware)
+
+app.use(cors())
 app.use(jsonParser)
 
 //routers
