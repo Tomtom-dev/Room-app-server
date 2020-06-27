@@ -6,7 +6,8 @@ const port = process.env.PORT || 4000;
 const corsMiddleware =cors();
 // const authMiddleware= require('./auth/middleware');
 
-app.use(corsMiddleware)
+
+app.use(cors())
 app.use(jsonParser)
 
 //routers
