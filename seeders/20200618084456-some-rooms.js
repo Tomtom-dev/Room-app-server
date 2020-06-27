@@ -6,10 +6,11 @@ module.exports = {
       "rooms",
       [
         {
-          title:"free room for help gardening",
+          title:"Free room for help in the garden",
           location:"Amsterdam",
-          description:"I Propose a free room for a gardening help",
+          description:"I Propose a free room for a gardening help.",
           image:"https://expatpaysbas.com/wp-content/uploads/2018/01/logement-amsterdam-1.jpg",
+          
           createdAt: new Date(),
           updatedAt: new Date(),
           userId:1
