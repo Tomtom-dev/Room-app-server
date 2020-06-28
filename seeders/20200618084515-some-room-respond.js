@@ -7,7 +7,6 @@ module.exports = {
     [
       {
         message:"hello, i'm interested",
-        answer:true,
         createdAt: new Date(),
         updatedAt: new Date(),
         roomId:2,
@@ -15,7 +14,6 @@ module.exports = {
       },
       {
         message:"test",
-        answer:false,
         createdAt: new Date(),
         updatedAt: new Date(),
         roomId:1,

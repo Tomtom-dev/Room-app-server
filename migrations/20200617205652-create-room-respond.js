@@ -11,9 +11,6 @@ module.exports = {
       message: {
         type: Sequelize.STRING
       },
-      answer: {
-        type: Sequelize.BOOLEAN
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
