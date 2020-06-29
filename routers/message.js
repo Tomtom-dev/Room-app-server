@@ -5,9 +5,7 @@ const router = new Router();
 // get all messages
 router.get("/", async (req,res,next) =>{
     try{
-        console.log("hellloooooooooooooooo");
         const allMessages = await Message.findAll();
-        console.log(allMessages);
         
         res.json(allMessages)
     }catch(error){
@@ -16,11 +14,12 @@ router.get("/", async (req,res,next) =>{
 })
 
 
+// get message by roomId
+
+
+
 //create a new message
 router.post('/', async (req,res,next)=>{
-
-
-
    try{
     const {message,roomId,userId}=req.body
 
@@ -37,7 +36,7 @@ router.post('/', async (req,res,next)=>{
 
 module.exports = router;
 
-// get message by roomId
+
 
 
 

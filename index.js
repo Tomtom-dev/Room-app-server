@@ -12,7 +12,7 @@ app.use(jsonParser)
 
 //routers
 const roomPageRouter = require('./routers/room')
-app.use("/", roomPageRouter)
+app.use("/room", roomPageRouter)
 
 const userAuthRouter = require ("./routers/users")
 app.use("/signup", userAuthRouter)
