@@ -2,19 +2,22 @@ const {Router} = require ("express");
 const Message= require("../models").room_respond;
 const router = new Router();
 
-// get all messages
-router.get("/", async (req,res,next) =>{
+
+
+
+
+
+// get messages by roomId
+router.get("/:roomId", async (req,res,next) =>{
     try{
-        const allMessages = await Message.findAll();
+        const{roomId}=req.params
+        const allMessages = await Message.findAll({where:{roomId :roomId}});
         
         res.json(allMessages)
     }catch(error){
         next(error)
     }
 })
-
-
-// get message by roomId
 
 
 
