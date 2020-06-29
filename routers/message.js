@@ -22,7 +22,7 @@ router.post('/', async (req,res,next)=>{
 
 
    try{
-    const {message, answer,roomId,userId}=req.body
+    const {message,roomId,userId}=req.body
 
         const updated = await Message.create({
             message,
