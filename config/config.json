@@ -14,6 +14,11 @@
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": "DATABASE_URL",
+    "username": "postgres",
+    "password": "secret",
+    "database": "room-for-help",
+    "host": "localhost",
+    "dialect": "postgres"
   }
 }
