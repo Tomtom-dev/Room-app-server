@@ -15,10 +15,13 @@
   },
   "production": {
     "use_env_variable": "DATABASE_URL",
-    "username": "postgres",
-    "password": "secret",
-    "database": "room-for-help",
-    "host": "localhost",
-    "dialect": "postgres"
+    "dialect": "postgresql",
+    "logging": false,
+        "dialectOptions": {
+      "ssl": {      
+        "require": true,
+        "rejectUnauthorized": false 
+      }
   }
+}
 }
